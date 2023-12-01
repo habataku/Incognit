@@ -17,8 +17,8 @@
   "author": "caracal-js and Amethyst Network contributors",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@habataku/sseee": "git+ssh://git@github.com:habataku/sseee",
-    "@habataku/node-ser": "git+ssh://git@github.com:habataku/node-ser",
+    "@titaniumnetwork-dev/ultraviolet": "^2.0.0",
+    "@tomphttp/bare-server-node": "^2.0.1",
     "body-parser": "^1.20.2",
     "connect": "^3.7.0",
     "serve-index": "^1.9.1",
