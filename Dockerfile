@@ -1,15 +1,8 @@
-FROM node:18-alpine
+FROM node:19-bullseye
 ENV NODE_ENV=production
-
 WORKDIR /app
-
-COPY package*.json .
-
+COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install
-
-COPY static static/
-COPY src/*.js src/
-
 EXPOSE 8080
-
-CMD ["npm", "start"]
+COPY . .
+CMD [ "npm", "start" ]
